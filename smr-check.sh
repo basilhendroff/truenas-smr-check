@@ -63,6 +63,10 @@ WD08=("WDC WD" "60" "EMAZ")                 #3
 WD09=("WDC WD" "10" "SPWX")                 #3
 WD10=("WDC WD" "40" "NPZZ")                 #3
 
+# To test this script when you have no SMR disks, configure the TEST array below with a valid CMR disk on your system.
+# Temporarily uncomment the three TEST lines and run the scriptUncomment the lines and the two flagged lines that follw 
+# TEST=("WDC WD" "30" "EFRX")
+
 # Quiet detection phase. If an SMR disk is detected flag f will be set to 1.
 f=0
 
@@ -76,6 +80,7 @@ DetectSMR WD07 q
 DetectSMR WD08 q
 DetectSMR WD09 q
 DetectSMR WD10 q
+# DetectSMR TEST q
 
 # If the flag f is still zero, no SMR disk was detected. :)
 if [[ "$f" == 0 ]]; then
@@ -104,6 +109,6 @@ else
   DetectSMR WD08
   DetectSMR WD09
   DetectSMR WD10
-  
+# DetectSMR TEST  
   echo
 fi
