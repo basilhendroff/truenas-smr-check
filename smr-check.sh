@@ -64,7 +64,7 @@ WD09=("WDC WD" "10" "SPWX")                 #3
 WD10=("WDC WD" "40" "NPZZ")                 #3
 
 # To test this script when you have no SMR disks, configure the TEST array below with a valid CMR disk on your system.
-# Temporarily uncomment the three TEST lines and run the scriptUncomment the lines and the two flagged lines that follw 
+# Temporarily uncomment the three TEST lines below and run the script. 
 # TEST=("WDC WD" "30" "EFRX")
 
 # Quiet detection phase. If an SMR disk is detected flag f will be set to 1.
