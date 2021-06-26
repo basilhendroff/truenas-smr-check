@@ -104,4 +104,6 @@ else
   DetectSMR WD08
   DetectSMR WD09
   DetectSMR WD10
+  
+  echo
 fi
