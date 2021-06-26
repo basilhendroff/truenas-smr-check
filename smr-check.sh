@@ -5,8 +5,6 @@ DeviceWidth=7
 ModelWidth=10
 SerialWidth=17
 
-cols="%${DeviceWidth}s | %${ModelWidth}s | %${SerialWidth}s |\n"
-
 # Gather disk information and populate arrays
 midclt call disk.query | jq -S '.[] | {devname: .devname, model: .model, serial: .serial}' > tmp.json
 
@@ -65,29 +63,27 @@ WD08=("WDC WD" "60" "EMAZ")			            #3
 WD09=("WDC WD" "10" "SPWX")			            #3
 WD10=("WDC WD" "40" "NPZZ")			            #3
 
-TEST=("WDC WD" "30" "EFRX")
-
+# Quiet detection phase. If an SMR disk is detected flag f will be set to 1.
 f=0
-cols="%${DeviceWidth}s | %${ModelWidth}s | %${SerialWidth}s |\n"
 
-DetectSMR WD01 quiet
-DetectSMR WD02 quiet
-DetectSMR WD03 quiet
-DetectSMR WD04 quiet
-DetectSMR WD05 quiet
-DetectSMR WD06 quiet
-DetectSMR WD07 quiet
-DetectSMR WD08 quiet
-DetectSMR WD09 quiet
-DetectSMR WD10 quiet
+DetectSMR WD01 q
+DetectSMR WD02 q
+DetectSMR WD03 q
+DetectSMR WD04 q
+DetectSMR WD05 q
+DetectSMR WD06 q
+DetectSMR WD07 q
+DetectSMR WD08 q
+DetectSMR WD09 q
+DetectSMR WD10 q
 
-DetectSMR TEST quiet
-
+# If the flag f is still zero, no SMR disk was detected. :)
 if [[ "$f" == 0 ]]; then
   echo
   echo -e "\e[1;32mNo known WD SATA SMR disks detected.\e[0m"
   echo
 else
+# otherwise, one or more SMR disks were detected so diplay all SMR disks in a table :(
   echo
   echo -e "\e[1;31mKnown WD SATA SMR disk(s) detected.\e[0m"
   echo
@@ -108,6 +104,4 @@ else
   DetectSMR WD08
   DetectSMR WD09
   DetectSMR WD10
-
-  DetectSMR TEST
 fi
