@@ -2,7 +2,7 @@
 TrueCommand has a built-in check for known WD SATA SMR disks on connected TrueNAS servers. However, if you don't use TrueCommand, you can use this bash script to help you identify culprit disks.
 
 ## How to Use
-Download the repository to a convenient directory on your TrueNAS system by changing to that directory and running git clone https://github.com/basilhendroff/truenas-smr-check. Then change into the newly created directory and run the script `./smr-check.sh`. The script ahouldn't take very long to run. The script does not leave anything behind once its run. If SMR disks are detected, the device name, WD SATA disk model and disk serial number of each disk is displayed in a table e.g.
+Download the repository to a convenient directory on your TrueNAS system by changing to that directory and running `git clone https://github.com/basilhendroff/truenas-smr-check`. Then change into the newly created directory and run the script `./smr-check.sh`. The script ahouldn't take very long to run. The script does not leave anything behind once its run. If SMR disks are detected, the device name, WD SATA disk model and disk serial number of each disk is displayed in a table e.g.
 ```
 
 Known WD SATA SMR disk(s) detected.
