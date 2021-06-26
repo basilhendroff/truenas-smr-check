@@ -52,16 +52,16 @@ done
 # 2. https://nascompares.com/answer/list-of-wd-cmr-and-smr-hard-drives-hdd/
 # 3. https://hddscan.com/blog/2020/hdd-wd-smr.html
 #
-WD01=("WDC WD" "20" "30" "40" "60" "EFAX")	#1
-WD02=("WDC WD" "20" "30" "40" "60" "EZAZ")	#1
-WD03=("WDC WD" "10" "20" "SPZX")		        #1
-WD04=("WDC WD" "10" "SPSX")			            #1
-WD05=("WDC WD" "9000" "LPZX")			          #1
-WD06=("WDC WD" "5000" "LPSX")			          #2
-WD07=("WDC WD" "40" "60" "EDAZ")		        #3
-WD08=("WDC WD" "60" "EMAZ")			            #3
-WD09=("WDC WD" "10" "SPWX")			            #3
-WD10=("WDC WD" "40" "NPZZ")			            #3
+WD01=("WDC WD" "20" "30" "40" "60" "EFAX")  #1
+WD02=("WDC WD" "20" "30" "40" "60" "EZAZ")  #1
+WD03=("WDC WD" "10" "20" "SPZX")            #1
+WD04=("WDC WD" "10" "SPSX")                 #1
+WD05=("WDC WD" "9000" "LPZX")               #1
+WD06=("WDC WD" "5000" "LPSX")               #2
+WD07=("WDC WD" "40" "60" "EDAZ")            #3
+WD08=("WDC WD" "60" "EMAZ")                 #3
+WD09=("WDC WD" "10" "SPWX")                 #3
+WD10=("WDC WD" "40" "NPZZ")                 #3
 
 # Quiet detection phase. If an SMR disk is detected flag f will be set to 1.
 f=0
