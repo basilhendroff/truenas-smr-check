@@ -1,5 +1,7 @@
 # truenas-smr-check
-TrueCommand has a built-in check for known WD SATA SMR disks on connected TrueNAS servers. However, if you don't use TrueCommand, you can still use this bash script to help you identify culprit disks. The script doesn't limit checks just to the WD NAS range of disks (RED). It will check for any WD SMR disk listed in its database (BLUE, BLACK, etc.).
+TrueCommand has a built-in check for known WD SATA SMR disks on connected TrueNAS servers. However, if you don't use TrueCommand, you can still use this bash script to help you identify culprit disks. The script doesn't limit checks just to the WD NAS range of disks (RED), but extends this to any WD SMR disk listed in its database (BLUE, BLACK, etc.). 
+
+It now identifies known Seagate SMR drives. 
 
 ## Status
 This script will work with FreeNAS 11.3, and TrueNAS CORE 12.0 or later. Though untested, it may very well work with earlier version of FreeNAS 11.
@@ -8,11 +10,12 @@ This script will work with FreeNAS 11.3, and TrueNAS CORE 12.0 or later. Though 
 Download the repository to a convenient directory on your TrueNAS system by changing to that directory and running `git clone https://github.com/basilhendroff/truenas-smr-check`. Then change into the newly created directory and run the script `./smr-check.sh`. The script ahould only take a few seconds to execute. The script is non-invasive and does not leave anything behind once it's run. If SMR disks are detected, the device name, WD SATA disk model and disk serial number of each disk is displayed in a table e.g.
 ```
 
-Known WD SATA SMR disk(s) detected.
+Known SATA SMR disk(s) detected.
 
- Device |      Model |     Serial Number |
-------------------------------------------
-   ada3 |   WD30EFAX |   WD-xxxxxxxxxxxx |
+ Device |        Model |     Serial Number |
+--------------------------------------------
+   ada0 |  ST8000VX008 |          xxxxxxxx |
+   ada3 |     WD30EFAX |   xxxxxxxxxxxxxxx |
 ```
 
 ## Scope
