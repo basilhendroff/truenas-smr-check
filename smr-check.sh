@@ -93,7 +93,7 @@ ST20=("ST" "3000" "VX017")                  #2
 # TEST=("WDC WD" "30" "EFRX")
 # TEST=("ST" "6000" "VN0041")
 
-# Quiet detection phase. If an SMR disk is detected flag f will be set to 1.
+# Quiet detection phase. If an SMR disk is detected flag f will be set.
 f=0
 
 # Detect Western Digital SMR disks
@@ -108,7 +108,7 @@ done
 
 # DetectSMR TEST q
 
-# If the flag f is still zero, no SMR disk was detected. :)
+# If the flag f is still unset, no SMR disk was detected. :)
 if [[ "$f" == 0 ]]; then
   echo
   echo -e "\e[1;32mNo known SATA SMR disks detected.\e[0m"
