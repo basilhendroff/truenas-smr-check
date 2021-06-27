@@ -63,7 +63,7 @@ WD05=("WDC WD" "5000" "LPSX")               #2 WD Black(2.5) 500TB
 WD06=("WDC WD" "9000" "LPZX")               #1 WD Blue(2.5) 900GB
 WD07=("WDC WD" "40" "NPZZ")                 #3 WD Blue(2.5) 4TB
 WD08=("WDC WD" "10" "SPSX")                 #1 WD Black(2.5) 1TB
-WD09=("WDC WD" "10" "SPWX")                 #3 WD Blue(2.5) 1TB
+WD09=("WDC WD" "10" "SPWX")                 #1 WD Blue(2.5) 1TB
 WD10=("WDC WD" "10" "20" "SPZX")            #1 WD Blue(2.5) 1TB 2TB
 
 # Seagate
@@ -85,7 +85,7 @@ ST15=("ST" "1000" "LM048")                  #1 Barracuda(2.5) 1TB
 ST16=("ST" "1000" "LM049")                  #1 Barracuda(2.5) 1TB
 ST17=("ST" "8000" "VX002")                  #2 Skyhawk(3.5) 8TB
 ST18=("ST" "4000" "VX005")                  #2 Skyhawk(3.5) 4TB
-ST19=("ST" "4000" "VX005")                  #2 Skyhawk(3.5) 4TB
+ST19=("ST" "2000" "VX007")                  #2 Skyhawk(3.5) 2TB
 ST20=("ST" "1000" "8000" "VX008")           #1,#2 Skyhawk(3.5) 8TB, 1TB 
 ST21=("ST" "6000" "VX010")                  #2 Skyhawk(3.5) 2TB
 ST22=("ST" "6000" "VX011")                  #2 Skyhawk(3.5) 6TB
