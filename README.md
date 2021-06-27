@@ -1,5 +1,5 @@
 # truenas-smr-check
-TrueCommand has a built-in check for known WD SATA SMR disks on connected TrueNAS servers. However, if you don't use TrueCommand, you can still use this bash script to help you identify culprit disks. The script doesn't limit checks just to the WD NAS range of disks (RED), but extends this to any WD SMR disk listed in its database (BLUE, BLACK, etc.). 
+TrueCommand has a built-in check for known WD SMR disks on connected TrueNAS servers. However, if you don't use TrueCommand, you can still use this bash script to help you identify culprit disks. The script doesn't limit checks just to the WD NAS range of disks (RED), but extends this to any WD SMR disk listed in its database (BLUE, BLACK, etc.). 
 
 The latest version identifies known Seagate SMR drives as well.
 
@@ -19,9 +19,9 @@ Known SATA SMR disk(s) detected.
 ```
 
 ## Scope
-At this stage, only known WD and Seagate SATA SMR disks are checked for.
+At this stage, only known WD and Seagate SMR disks are checked for.
 
-The database of known SATA SMR disks has been compiled from the following sources:
+The database of known SMR disks has been compiled from the following sources:
 1. [TrueNAS Community Resource: List of known SMR drives](https://www.truenas.com/community/resources/list-of-known-smr-drives.141/)
 2. [NAS Compares: List Of WD CMR And SMR Hard Drives (HDD)](https://nascompares.com/answer/list-of-wd-cmr-and-smr-hard-drives-hdd/)
 3. [HDDScan: What WD and HGST hard drives are SMR?](https://hddscan.com/blog/2020/hdd-wd-smr.html)
