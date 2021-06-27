@@ -14,8 +14,8 @@ Known SATA SMR disk(s) detected.
 
  Device |        Model |     Serial Number |
 --------------------------------------------
-   ada0 |  ST8000VX008 |   xxxxxxxxxxxxxxx |
-   ada3 |     WD30EFAX |   yyyyyyyyyyyyyyy |
+   ada0 |  ST8000VX008 |          xxxxxxxx |
+   ada3 |     WD30EFAX |   xxxxxxxxxxxxxxx |
 ```
 
 ## Scope
