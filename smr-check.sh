@@ -76,17 +76,21 @@ ST06=("ST" "4000" "8000" "DM004")           #1
 ST07=("ST" "2000" "DM005")                  #1
 ST08=("ST" "3000" "DM007")                  #1
 ST09=("ST" "2000" "DM008")                  #1
-ST10=("ST" "8000" "VX002")                  #2
-ST11=("ST" "4000" "VX005")                  #2
-ST12=("ST" "2000" "VX007")                  #1
-ST13=("ST" "1000" "8000" "VX008")           #1, #2
-ST14=("ST" "6000" "VX010")                  #2
-ST15=("ST" "6000" "VX011")                  #2
-ST16=("ST" "2000" "VX012")                  #2
-ST17=("ST" "4000" "VX013")                  #2
-ST18=("ST" "2000" "VX015")                  #2
-ST19=("ST" "3000" "VX016")                  #2
-ST20=("ST" "3000" "VX017")                  #2
+ST10=("ST" "5000" "LM000")                  #1
+ST11=("ST" "2000" "LM015")                  #1
+ST12=("ST" "2000" "4000" "LM024")           #1
+ST13=("ST" "1000" "LM048")                  #1
+ST14=("ST" "8000" "VX002")                  #2
+ST15=("ST" "4000" "VX005")                  #2
+ST16=("ST" "2000" "VX007")                  #1
+ST17=("ST" "1000" "8000" "VX008")           #1, #2
+ST18=("ST" "6000" "VX010")                  #2
+ST19=("ST" "6000" "VX011")                  #2
+ST20=("ST" "2000" "VX012")                  #2
+ST21=("ST" "4000" "VX013")                  #2
+ST22=("ST" "2000" "VX015")                  #2
+ST23=("ST" "3000" "VX016")                  #2
+ST24=("ST" "3000" "VX017")                  #2
 
 # To test this script when you have no SMR disks, configure and temporarily uncomment one of the the TEST arrays below with a valid CMR disk on your system. 
 # TEST=("WDC WD" "30" "EFRX")
@@ -102,7 +106,7 @@ for k in {01..10}; do
 done
 
 # Detect Seagate SMR disks
-for k in {01..20}; do
+for k in {01..24}; do
   DetectSMR ST"$k" q
 done
 
@@ -131,7 +135,7 @@ else
   done
 
 # Detect Seagate SMR disks
-  for k in {01..20}; do
+  for k in {01..24}; do
     DetectSMR ST"$k"
   done
 
