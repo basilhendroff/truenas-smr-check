@@ -40,7 +40,6 @@ for ((i=0;i<${#Device[@]};i++)); do
         fi
       done
     fi
-#    printf "%5s %10s %20s\n" "${Device[$i]}" "${TMP[$i]}" "${Serial[$i]}"
   fi
 done
 }
