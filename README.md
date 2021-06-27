@@ -1,5 +1,5 @@
 # truenas-smr-check
-TrueCommand has a built-in check for known WD SATA SMR disks on connected TrueNAS servers. However, if you don't use TrueCommand, you can use this bash script to help you identify culprit disks.
+TrueCommand has a built-in check for known WD SATA SMR disks on connected TrueNAS servers. However, if you don't use TrueCommand, you can still use this bash script to help you identify culprit disks.
 
 ## Status
 This script will work with FreeNAS 11.3, and TrueNAS CORE 12.0 or later. Though untested, it may work with earlier version of FreeNAS 11.
