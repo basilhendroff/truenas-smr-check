@@ -21,7 +21,7 @@ Known SATA SMR disk(s) detected.
 ## Scope
 At this stage, only known WD SATA SMR disks are checked for.
 
-The database of known SATA SMR disks has been compiled from the following resources:
+The database of known SATA SMR disks has been compiled from the following sources:
 1. [TrueNAS Community Resource: List of known SMR drives](https://www.truenas.com/community/resources/list-of-known-smr-drives.141/)
 2. [NAS Compares: List Of WD CMR And SMR Hard Drives (HDD)](https://nascompares.com/answer/list-of-wd-cmr-and-smr-hard-drives-hdd/)
 3. [HDDScan: What WD and HGST hard drives are SMR?](https://hddscan.com/blog/2020/hdd-wd-smr.html)
