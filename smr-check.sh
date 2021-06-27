@@ -2,7 +2,7 @@
 
 # Table column widths
 DeviceWidth=7
-ModelWidth=10
+ModelWidth=12
 SerialWidth=17
 
 # Gather disk information and populate arrays
