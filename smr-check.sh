@@ -91,6 +91,7 @@ ST20=("ST" "3000" "VX017")                  #2
 # To test this script when you have no SMR disks, configure the TEST array below with a valid CMR disk on your system.
 # Temporarily uncomment the three TEST lines below and run the script. 
 # TEST=("WDC WD" "30" "EFRX")
+# TEST=("ST" "6000" "VN0041")
 
 # Quiet detection phase. If an SMR disk is detected flag f will be set to 1.
 f=0
