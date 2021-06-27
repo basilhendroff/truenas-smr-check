@@ -10,11 +10,12 @@ This script will work with FreeNAS 11.3, and TrueNAS CORE 12.0 or later. Though 
 Download the repository to a convenient directory on your TrueNAS system by changing to that directory and running `git clone https://github.com/basilhendroff/truenas-smr-check`. Then change into the newly created directory and run the script `./smr-check.sh`. The script ahould only take a few seconds to execute. The script is non-invasive and does not leave anything behind once it's run. If SMR disks are detected, the device name, WD SATA disk model and disk serial number of each disk is displayed in a table e.g.
 ```
 
-Known WD SATA SMR disk(s) detected.
+Known SATA SMR disk(s) detected.
 
- Device |      Model |     Serial Number |
-------------------------------------------
-   ada3 |   WD30EFAX |   WD-xxxxxxxxxxxx |
+ Device |        Model |     Serial Number |
+--------------------------------------------
+   ada0 |  ST8000VX008 |   xxxxxxxxxxxxxxx |
+   ada3 |     WD30EFAX |   yyyyyyyyyyyyyyy |
 ```
 
 ## Scope
