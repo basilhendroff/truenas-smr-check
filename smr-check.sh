@@ -47,7 +47,7 @@ for ((i=0;i<${#Device[@]};i++)); do
 done
 }
 
-# The SMR database is made up of a number of arrays (sorted by suffix)
+# The SMR database is made up of a number of arrays (sorted by suffix below)
 #
 # References:
 # 1. https://www.truenas.com/community/resources/list-of-known-smr-drives.141/
