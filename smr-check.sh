@@ -53,45 +53,49 @@ done
 # 1. https://www.truenas.com/community/resources/list-of-known-smr-drives.141/
 # 2. https://nascompares.com/answer/list-of-wd-cmr-and-smr-hard-drives-hdd/
 # 3. https://hddscan.com/blog/2020/hdd-wd-smr.html
-#
+# 4. https://www.seagate.com/au/en/support/internal-hard-drives/desktop-hard-drives/barracuda-3-5/#specs
 # Western Digital
-WD01=("WDC WD" "40" "60" "EDAZ")            #3
-WD02=("WDC WD" "20" "30" "40" "60" "EFAX")  #1
-WD03=("WDC WD" "60" "EMAZ")                 #3
-WD04=("WDC WD" "20" "30" "40" "60" "EZAZ")  #1
-WD05=("WDC WD" "5000" "LPSX")               #2
-WD06=("WDC WD" "9000" "LPZX")               #1
-WD07=("WDC WD" "40" "NPZZ")                 #3
-WD08=("WDC WD" "10" "SPSX")                 #1
-WD09=("WDC WD" "10" "SPWX")                 #3
-WD10=("WDC WD" "10" "20" "SPZX")            #1
+WD01=("WDC WD" "40" "60" "EDAZ")            #3 WD Elements(3.5) 4TB 6TB
+WD02=("WDC WD" "20" "30" "40" "60" "EFAX")  #1 WD Red(3.5) 2TB 3TB 4TB 6TB  
+WD03=("WDC WD" "60" "EMAZ")                 #3 WD Elements(3.5) 6TB
+WD04=("WDC WD" "20" "30" "40" "60" "EZAZ")  #1 WD Blue(3.5) 2TB 3TB 4TB 6TB  
+WD05=("WDC WD" "5000" "LPSX")               #2 WD Black(2.5) 500TB
+WD06=("WDC WD" "9000" "LPZX")               #1 WD Blue(2.5) 900GB
+WD07=("WDC WD" "40" "NPZZ")                 #3 WD Blue(2.5) 4TB
+WD08=("WDC WD" "10" "SPSX")                 #1 WD Black(2.5) 1TB
+WD09=("WDC WD" "10" "SPWX")                 #3 WD Blue(2.5) 1TB
+WD10=("WDC WD" "10" "20" "SPZX")            #1 WD Blue(2.5) 1TB 2TB
 
 # Seagate
-ST01=("ST" "6000" "8000" "AS0002")          #1
-ST02=("ST" "8000" "AS0003")                 #1
-ST03=("ST" "5000" "AS0011")                 #1
-ST04=("ST" "5000" "DM000")                  #1
-ST05=("ST" "5000" "6000" "DM003")           #1
-ST06=("ST" "4000" "8000" "DM004")           #1
-ST07=("ST" "2000" "DM005")                  #1
-ST08=("ST" "3000" "DM007")                  #1
-ST09=("ST" "2000" "DM008")                  #1
-ST10=("ST" "5000" "LM000")                  #1
-ST11=("ST" "2000" "LM015")                  #1
-ST12=("ST" "3000" "4000" "LM024")           #1
-ST13=("ST" "500" "LM030")                   #1(7) 
-ST14=("ST" "1000" "LM048")                  #1
-ST15=("ST" "8000" "VX002")                  #2
-ST16=("ST" "4000" "VX005")                  #2
-ST17=("ST" "2000" "VX007")                  #1
-ST18=("ST" "1000" "8000" "VX008")           #1,#2
-ST19=("ST" "6000" "VX010")                  #2
-ST20=("ST" "6000" "VX011")                  #2
-ST21=("ST" "2000" "VX012")                  #2
-ST22=("ST" "4000" "VX013")                  #2
-ST23=("ST" "2000" "VX015")                  #2
-ST24=("ST" "3000" "VX016")                  #2
-ST25=("ST" "3000" "VX017")                  #2
+ST01=("ST" "6000" "8000" "AS0002")          #1 Archive(3.5) 6TB 8TB 
+ST02=("ST" "8000" "AS0003")                 #1 Exos (3.5) 8TB 
+ST03=("ST" "5000" "AS0011")                 #1 Archive(3.5) 5TB
+ST04=("ST" "5000" "DM000")                  #1 Desktop(3.5) 5TB
+ST05=("ST" "5000" "6000" "DM003")           #4 Barracuda(3.5) 6TB #1 5TB
+ST06=("ST" "4000" "8000" "DM004")           #4 Barracuda(3.5) 8TB 4TB
+ST07=("ST" "2000" "DM005")                  #4 Barracuda(3.5) 4TB 2TB
+ST08=("ST" "2000" "DM006")                  #4 Barracuda(3.5) 2TB
+ST09=("ST" "3000" "DM007")                  #4 Barracuda(3.5) 3TB
+ST10=("ST" "2000" "3000" "DM008")           #4 Barracuda(3.5) 3TB 2TB
+ST11=("ST" "3000" "DM009")                  #4 Barracuda(3.5) 3TB 500GB
+ST12=("ST" "5000" "LM000")                  #4 Barracuda(2.5) 5TB
+ST13=("ST" "2000" "LM015")                  #4 Barracuda(2.5) 2TB
+ST14=("ST" "3000" "4000" "LM024")           #4 Barracuda(2.5) 4TB 3TB
+ST15=("ST" "500" "LM030")                   #1 Barracuda(2.5) 500GB
+ST16=("ST" "500" "LM034")                   #1 Barracuda(2.5) 500GB
+ST17=("ST" "1000" "LM048")                  #1 Barracuda(2.5) 1TB
+ST18=("ST" "1000" "LM049")                  #1 Barracuda(2.5) 1TB
+ST19=("ST" "8000" "VX002")                  #2 Skyhawk(3.5) 8TB
+ST20=("ST" "4000" "VX005")                  #2 Skyhawk(3.5) 4TB
+ST21=("ST" "4000" "VX005")                  #2 Skyhawk(3.5) 4TB
+ST22=("ST" "1000" "8000" "VX008")           #1,#2 Skyhawk(3.5) 8TB, 1TB 
+ST23=("ST" "6000" "VX010")                  #2 Skyhawk(3.5) 2TB
+ST24=("ST" "6000" "VX011")                  #2 Skyhawk(3.5) 6TB
+ST25=("ST" "2000" "VX012")                  #2 Skyhawk(3.5) 6TB
+ST26=("ST" "4000" "VX013")                  #2 Skyhawk(3.5) 4TB
+ST27=("ST" "2000" "VX015")                  #2 Skyhawk(3.5) 2TB
+ST28=("ST" "3000" "VX016")                  #2 Skyhawk(3.5) 2TB
+ST29=("ST" "3000" "VX017")                  #2 Skyhawk(3.5) 2TB
 
 # To test this script when you have no SMR disks, configure and temporarily uncomment one of the the TEST arrays below with a valid CMR disk on your system. 
 # TEST=("WDC WD" "30" "EFRX")
@@ -107,7 +111,7 @@ for k in {01..10}; do
 done
 
 # Detect Seagate SMR disks
-for k in {01..25}; do
+for k in {01..29}; do
   DetectSMR ST"$k" q
 done
 
@@ -136,7 +140,7 @@ else
   done
 
 # Detect Seagate SMR disks
-  for k in {01..25}; do
+  for k in {01..29}; do
     DetectSMR ST"$k"
   done
 
