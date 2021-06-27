@@ -19,7 +19,7 @@ Known SATA SMR disk(s) detected.
 ```
 
 ## Scope
-At this stage, only known WD SATA SMR disks are checked for.
+At this stage, only known WD and Seagate SATA SMR disks are checked for.
 
 The database of known SATA SMR disks has been compiled from the following sources:
 1. [TrueNAS Community Resource: List of known SMR drives](https://www.truenas.com/community/resources/list-of-known-smr-drives.141/)
