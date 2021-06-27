@@ -111,12 +111,12 @@ done
 # If the flag f is still zero, no SMR disk was detected. :)
 if [[ "$f" == 0 ]]; then
   echo
-  echo -e "\e[1;32mNo known WD SATA SMR disks detected.\e[0m"
+  echo -e "\e[1;32mNo known SATA SMR disks detected.\e[0m"
   echo
 else
 # otherwise, one or more SMR disks were detected so diplay all SMR disks in a table :(
   echo
-  echo -e "\e[1;31mKnown WD SATA SMR disk(s) detected.\e[0m"
+  echo -e "\e[1;31mKnown SATA SMR disk(s) detected.\e[0m"
   echo
 
   fmt="%${DeviceWidth}s | %${ModelWidth}s | %${SerialWidth}s |\n"
