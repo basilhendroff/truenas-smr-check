@@ -17,7 +17,7 @@ Known SATA SMR disk(s) detected.
    ada0 |  ST8000VX008 |          xxxxxxxx |
    ada3 |     WD30EFAX |   xxxxxxxxxxxxxxx |
 ```
-The script SMR database is updated whenever SMR disks is identified. It's important therefore to always download and use the latest version of this script. 
+The script SMR database is updated whenever I become aware of previously unidentified SMR disks. It's important therefore to always download and use the latest version of this script. 
 
 ## Scope
 At this stage, only known WD and Seagate SMR disks are checked for.
