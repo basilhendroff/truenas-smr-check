@@ -53,7 +53,10 @@ done
 # 1. https://www.truenas.com/community/resources/list-of-known-smr-drives.141/
 # 2. https://nascompares.com/answer/list-of-wd-cmr-and-smr-hard-drives-hdd/
 # 3. https://hddscan.com/blog/2020/hdd-wd-smr.html
-# 
+# 4. https://www.seagate.com/files/www-content/datasheets/pdfs/skyhawk-3-5-hdd-DS1902-15M-2103US-en_US.pdf
+# 5. https://www.seagate.com/www-content/datasheets/pdfs/skyhawk-3-5-hdd-DS1902-15-2009GB-en_AS.pdf
+# 6. https://www.seagate.com/www-content/datasheets/pdfs/barracuda-2-5-DS1907-3-2005GB-en_AU.pdf
+#
 # Western Digital
 WD01=("WDC WD" "40" "60" "EDAZ")            #3 WD Elements(3.5) 4TB 6TB
 WD02=("WDC WD" "20" "30" "40" "60" "EFAX")  #1 WD Red(3.5) 2TB 3TB 4TB 6TB  
@@ -71,29 +74,29 @@ ST01=("ST" "6000" "8000" "AS0002")          #1 Archive(3.5) 6TB 8TB
 ST02=("ST" "8000" "AS0003")                 #1 Exos (3.5) 8TB 
 ST03=("ST" "5000" "AS0011")                 #1 Archive(3.5) 5TB
 ST04=("ST" "5000" "DM000")                  #1 Desktop(3.5) 5TB
-ST05=("ST" "5000" "6000" "DM003")           #1 Barracuda(3.5) 6TB #1 5TB
+ST05=("ST" "5000" "6000" "DM003")           #1 Barracuda(3.5) 5TB 6TB
 ST06=("ST" "4000" "8000" "DM004")           #1 Barracuda(3.5) 8TB 4TB
 ST07=("ST" "2000" "DM005")                  #1 Barracuda(3.5) 4TB 2TB
 ST08=("ST" "3000" "DM007")                  #1 Barracuda(3.5) 3TB
 ST09=("ST" "2000" "DM008")                  #1 Barracuda(3.5) 2TB
-ST10=("ST" "5000" "LM000")                  #1 Barracuda(2.5) 5TB
-ST11=("ST" "2000" "LM015")                  #1 Barracuda(2.5) 2TB
-ST12=("ST" "3000" "4000" "LM024")           #1 Barracuda(2.5) 4TB 3TB
-ST13=("ST" "500" "LM030")                   #1 Barracuda(2.5) 500GB
-ST14=("ST" "500" "LM034")                   #1 Barracuda(2.5) 500GB
-ST15=("ST" "1000" "LM048")                  #1 Barracuda(2.5) 1TB
-ST16=("ST" "1000" "LM049")                  #1 Barracuda(2.5) 1TB
-ST17=("ST" "8000" "VX002")                  #2 Skyhawk(3.5) 8TB
-ST18=("ST" "4000" "VX005")                  #2 Skyhawk(3.5) 4TB
+ST10=("ST" "5000" "LM000")                  #1 #6 Barracuda(2.5) 5TB
+ST11=("ST" "2000" "LM015")                  #1 #6 Barracuda(2.5) 2TB
+ST12=("ST" "3000" "4000" "LM024")           #1 #6 Barracuda(2.5) 4TB 3TB
+ST13=("ST" "500" "LM030")                   #6 Barracuda(2.5) 500GB
+ST14=("ST" "500" "LM034")                   #6 Barracuda(2.5) 500GB
+ST15=("ST" "1000" "LM048")                  #1 #6 Barracuda(2.5) 1TB
+ST16=("ST" "1000" "LM049")                  #6 Barracuda(2.5) 1TB
+ST17=("ST" "8000" "VX002")                  #2 #4 Skyhawk(3.5) 8TB
+ST18=("ST" "4000" "VX005")                  #2 #4 Skyhawk(3.5) 4TB
 ST19=("ST" "2000" "VX007")                  #2 Skyhawk(3.5) 2TB
-ST20=("ST" "1000" "8000" "VX008")           #1,#2 Skyhawk(3.5) 8TB, 1TB 
-ST21=("ST" "6000" "VX010")                  #2 Skyhawk(3.5) 2TB
-ST22=("ST" "6000" "VX011")                  #2 Skyhawk(3.5) 6TB
-ST23=("ST" "2000" "VX012")                  #2 Skyhawk(3.5) 6TB
-ST24=("ST" "4000" "VX013")                  #2 Skyhawk(3.5) 4TB
-ST25=("ST" "2000" "VX015")                  #2 Skyhawk(3.5) 2TB
-ST26=("ST" "3000" "VX016")                  #2 Skyhawk(3.5) 2TB
-ST27=("ST" "3000" "VX017")                  #2 Skyhawk(3.5) 2TB
+ST20=("ST" "1000" "8000" "VX008")           #1,#2 Skyhawk(3.5) 1TB,8TB 
+ST21=("ST" "6000" "VX010")                  #2 Skyhawk(3.5) 6TB
+ST22=("ST" "6000" "VX011")                  #2 #4 Skyhawk(3.5) 6TB
+ST23=("ST" "2000" "VX012")                  #2 #4 Skyhawk(3.5) 2TB
+ST24=("ST" "4000" "VX013")                  #2 #5 Skyhawk(3.5 UK) 4TB
+ST25=("ST" "2000" "VX015")                  #2 #5 Skyhawk(3.5 UK) 2TB
+ST26=("ST" "3000" "VX016")                  #2 Skyhawk(3.5) 3TB
+ST27=("ST" "3000" "VX017")                  #2 Skyhawk(3.5) 3TB
 
 # To test this script when you have no SMR disks, configure and temporarily uncomment one of the the TEST arrays below with a valid CMR disk on your system. 
 # TEST=("WDC WD" "30" "EFRX")
