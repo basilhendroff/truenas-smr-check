@@ -1,7 +1,7 @@
 # truenas-smr-check
 TrueCommand has a built-in check for known WD SMR disks on connected TrueNAS servers. However, if you don't use TrueCommand, you can still use this bash script to help you identify culprit disks. The script doesn't limit checks just to the WD NAS range of disks (RED), but extends this to any WD SMR disk listed in its database (BLUE, BLACK, etc.). 
 
-The latest version identifies known Seagate SMR drives as well.
+The latest version identifies known Seagate and Toshiba SMR drives as well.
 
 ## Status
 This script will work with FreeNAS 11.3, and TrueNAS CORE 12.0 or later. Though untested, it may very well work with earlier version of FreeNAS 11.
@@ -15,12 +15,13 @@ Known SATA SMR disk(s) detected.
  Device |        Model |     Serial Number |
 --------------------------------------------
    ada0 |  ST8000VX008 |          xxxxxxxx |
-   ada3 |     WD30EFAX |   xxxxxxxxxxxxxxx |
+   ada1 | HDWL120EZSTA |      xxxxxxxxxxxx |
+   ada3 |     WD30EFAX |  xxxxxxxxxxxxxxxx |
 ```
-The script SMR database is updated whenever I become aware of previously unidentified SMR disks. It's important therefore to always download and use the latest version of this script. 
+The script SMR database is updated whenever previously unidentified SMR disks surface. It's important therefore to always download and use the latest version of this script. 
 
 ## Scope
-At this stage, only known WD and Seagate SMR disks are checked for.
+Western Digital, Seagate and Toshiba SMR disks are detected. Form factors are predominantly 2.5" and 3.5" disks.
 
 The database of known SMR disks has been compiled from the following sources:
 1. [TrueNAS Community Resource: List of known SMR drives](https://www.truenas.com/community/resources/list-of-known-smr-drives.141/)
@@ -28,4 +29,4 @@ The database of known SMR disks has been compiled from the following sources:
 3. [HDDScan: What WD and HGST hard drives are SMR?](https://hddscan.com/blog/2020/hdd-wd-smr.html)
 
 ## Disclaimer
-This script is useful for quickly identifying SMR disks known to the script. While every endeavour has been taken to include as many SMR disks as possible, be aware the SMR database within the script may not be complete. Therefore, you're advised to confirm using other methods, such as manual checks, that the disks on your TrueNAS server are not using SMR technology.
+This script is useful for quickly identifying SMR disks known to the script. While every endeavour has been taken to include as many SMR disks as possible, be aware the SMR database within the script may not be complete. Therefore, you're advised not to rely solely on this script, but to confirm using other methods that the disks in your TrueNAS server are not using SMR technology.
