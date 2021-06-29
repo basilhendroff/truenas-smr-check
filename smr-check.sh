@@ -138,9 +138,13 @@ ST35=("ST" "3000" "VX017")                  #2 Skyhawk(3.5) 3TB
 TO01=("DT02" "400" "600" "ABA")             #1 #7 DT02(3.5) 4TB 6TB
 TO02=("MQ04" "200" "ABD")                   #1 #7 MQ04(2.5) 2TB
 TO03=("MQ04" "100" "ABF")                   #1 #7 MQ04(2.5) 1TB
-TO04=("HDWL" "110" "120" "EZSTA")           #1 #7 L200(2.5) 1TB 2TB
-TO05=("HDWL" "110" "120" "UZSVA")           #1 #7 L200(2.5) 1TB 2TB
-TO06=("HDWD" "240" "260" "UZSVA")           #1 #7 P300(3.5) 4TB 6TB
+TO04=("MQ04" "400" "UBB")                   #7 Canvio(2.5) 4TB
+TO05=("MQ04" "200" "UBD")                   #7 Canvio(2.5) 2TB
+TO06=("MQ04" "100" "UBF")                   #7 Canvio(2.5) 1TB
+TO07=("HDWC" "360" "EK3JB")                 #7 Canvio(3.5) 6TB
+TO08=("HDWD" "240" "260" "UZSVA")           #1 #7 P300(3.5) 4TB 6TB
+TO09=("HDWL" "110" "120" "EZSTA")           #1 #7 L200(2.5) 1TB 2TB
+TO10=("HDWL" "110" "120" "UZSVA")           #1 #7 L200(2.5) 1TB 2TB
 
 # To test this script when you have no SMR drives, configure and temporarily uncomment one of the the TEST arrays below with a valid CMR drives on your system. 
 # TEST=("WDC WD" "30" "EFRX")
@@ -166,7 +170,7 @@ for k in {01..35}; do
 done
 
 # Detect Toshiba SMR drives
-for k in {01..6}; do
+for k in {01..10}; do
   DetectSMR TO"$k" q
 done
 
@@ -205,7 +209,7 @@ done
   done
 
 # Detect Toshiba SMR drives
-for k in {01..6}; do
+for k in {01..10}; do
   DetectSMR TO"$k"
 done
 
