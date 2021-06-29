@@ -73,20 +73,20 @@ WD09=("WDC WD" "10" "SPWX")                 #1 WD Blue(2.5) 1TB
 WD10=("WDC WD" "10" "20" "SPZX")            #1 WD Blue(2.5) 1TB 2TB
 
 # Hitachi Global Storage Technologies (now Western Digital) 
-HGST01=("HSH72" "1414" "1415" "AL42M0")       #7 #8 Ultrastar HC620(3.5) 14TB 15TB
-HGST02=("HSH72" "1414" "1415" "AL42M4")       #7 #8 Ultrastar HC620(3.5) 14TB 15TB
-HGST03=("HSH72" "1414" "1415" "AL52M0")       #7 #8 Ultrastar HC620(3.5) 14TB 15TB
-HGST04=("HSH72" "1414" "1415" "AL52M4")       #7 #8 Ultrastar HC620(3.5) 14TB 15TB
-HGST05=("HSH72" "1414" "1415" "ALE6M0")       #7 #8 Ultrastar HC620(3.5) 14TB 15TB
-HGST06=("HSH72" "1414" "1415" "ALE6M4")       #7 #8 Ultrastar HC620(3.5) 14TB 15TB
-HGST07=("HSH72" "1414" "1415" "ALN6M0")       #7 #8 Ultrastar HC620(3.5) 14TB 15TB
-HGST08=("HSH72" "1414" "1415" "ALN6M4")       #7 #8 Ultrastar HC620(3.5) 14TB 15TB
-HGST09=("WSH72" "2020" "ALN6L1")              #7 #9 Ultrastar HC650(3.5) 20TB
-HGST10=("WSH72" "2020" "ALN6L4")              #7 #9 Ultrastar HC650(3.5) 20TB
-HGST11=("WSH72" "2020" "ALN6L5")              #7 #9 Ultrastar HC650(3.5) 20TB
-HGST12=("WSH72" "2020" "AL4201")              #7 #9 Ultrastar HC650(3.5) 20TB
-HGST13=("WSH72" "2020" "AL4204")              #7 #9 Ultrastar HC650(3.5) 20TB
-HGST14=("WSH72" "2020" "AL4205")              #7 #9 Ultrastar HC650(3.5) 20TB
+HGST01=("HSH72" "1414" "1415" "AL42M0")     #7 #8 Ultrastar HC620(3.5) 14TB 15TB
+HGST02=("HSH72" "1414" "1415" "AL42M4")     #7 #8 Ultrastar HC620(3.5) 14TB 15TB
+HGST03=("HSH72" "1414" "1415" "AL52M0")     #7 #8 Ultrastar HC620(3.5) 14TB 15TB
+HGST04=("HSH72" "1414" "1415" "AL52M4")     #7 #8 Ultrastar HC620(3.5) 14TB 15TB
+HGST05=("HSH72" "1414" "1415" "ALE6M0")     #7 #8 Ultrastar HC620(3.5) 14TB 15TB
+HGST06=("HSH72" "1414" "1415" "ALE6M4")     #7 #8 Ultrastar HC620(3.5) 14TB 15TB
+HGST07=("HSH72" "1414" "1415" "ALN6M0")     #7 #8 Ultrastar HC620(3.5) 14TB 15TB
+HGST08=("HSH72" "1414" "1415" "ALN6M4")     #7 #8 Ultrastar HC620(3.5) 14TB 15TB
+HGST09=("WSH72" "2020" "ALN6L1")            #7 #9 Ultrastar HC650(3.5) 20TB
+HGST10=("WSH72" "2020" "ALN6L4")            #7 #9 Ultrastar HC650(3.5) 20TB
+HGST11=("WSH72" "2020" "ALN6L5")            #7 #9 Ultrastar HC650(3.5) 20TB
+HGST12=("WSH72" "2020" "AL4201")            #7 #9 Ultrastar HC650(3.5) 20TB
+HGST13=("WSH72" "2020" "AL4204")            #7 #9 Ultrastar HC650(3.5) 20TB
+HGST14=("WSH72" "2020" "AL4205")            #7 #9 Ultrastar HC650(3.5) 20TB
 
 # Seagate
 ST01=("ST" "6000" "8000" "AS0002")          #1 Archive(3.5) 6TB 8TB 
