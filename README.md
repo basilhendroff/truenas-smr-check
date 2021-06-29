@@ -10,7 +10,7 @@ This script will work with FreeNAS 11.3, and TrueNAS CORE 12.0 or later. Though 
 Download the repository to a convenient directory on your TrueNAS system by changing to that directory and running `git clone https://github.com/basilhendroff/truenas-smr-check`. Then change into the newly created directory and run the script `./smr-check.sh`. The script should only take a few seconds to execute. The script is non-invasive and does not leave anything behind after it completes. If SMR drives are detected, the device name, drive model and serial number of each drive is displayed in a table e.g.
 ```
 
-Known SATA SMR drive(s) detected.
+Known SMR drive(s) detected.
 
  Device |        Model |     Serial Number |
 --------------------------------------------
@@ -21,7 +21,7 @@ Known SATA SMR drive(s) detected.
 The script SMR database is updated whenever previously unidentified SMR drives surface. It's important therefore to always download and use the latest version of this script. 
 
 ## Scope
-Western Digital, Seagate and Toshiba SMR drives are detected. Form factors are predominantly 2.5" and 3.5" drives.
+Western Digital, Seagate and Toshiba SMR drives are detected.
 
 The database of known SMR drives has been compiled from the following sources:
 1. [TrueNAS Community Resource: List of known SMR drives](https://www.truenas.com/community/resources/list-of-known-smr-drives.141/)
