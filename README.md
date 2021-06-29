@@ -29,4 +29,4 @@ The database of known SMR drives has been compiled from the following primary so
 3. [HDDScan: What WD and HGST hard drives are SMR?](https://hddscan.com/blog/2020/hdd-wd-smr.html)
 
 ## Disclaimer
-This script is useful for quickly identifying SMR drives known to the script. While every endeavour has been taken to include as many SMR drives as possible, be aware the SMR database within the script may not be complete. Therefore, you're advised not to rely solely on this script, but to confirm using other methods that the drives in your TrueNAS server are not using SMR technology.
+This script is useful for quickly identifying SMR drives registered in the SMR database within the script. While every endeavour has been made to include as many SMR drives as possible, be aware the SMR database may not be complete. Therefore, you're advised not to rely solely on this script, but to confirm using other methods that SMR drives are not being used in your TrueNAS server.
