@@ -12,11 +12,11 @@ Download the repository to a convenient directory on your TrueNAS system by chan
 
 Known SMR drive(s) detected.
 
- Device |           Model |     Serial Number |
------------------------------------------------
-   ada0 |     ST8000VX008 |          xxxxxxxx |
-   ada1 |    HDWL120EZSTA |      xxxxxxxxxxxx |
-   ada3 |        WD30EFAX |  xxxxxxxxxxxxxxxx |
+ Device |           Model |        Serial Number |
+--------------------------------------------------
+   ada0 |     ST8000VX008 |             xxxxxxxx |
+   ada1 |    HDWL120EZSTA |         xxxxxxxxxxxx |
+   ada3 |        WD30EFAX |     xxxxxxxxxxxxxxxx |
 ```
 The script SMR database is updated whenever previously unidentified SMR drives surface. It's important therefore to always download and use the latest version of this script. 
 
