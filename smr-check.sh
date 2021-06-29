@@ -79,25 +79,27 @@ ST06=("ST" "4000" "8000" "DM004")           #1 Barracuda(3.5) 8TB 4TB
 ST07=("ST" "2000" "DM005")                  #1 Barracuda(3.5) 4TB 2TB
 ST08=("ST" "3000" "DM007")                  #1 Barracuda(3.5) 3TB
 ST09=("ST" "2000" "DM008")                  #1 Barracuda(3.5) 2TB
-ST09=("ST" "500" "DM009")                   #7 Barracuda(3.5) 500GB
-ST10=("ST" "5000" "LM000")                  #1 #6 Barracuda(2.5) 5TB
-ST11=("ST" "2000" "LM015")                  #1 #6 Barracuda(2.5) 2TB
-ST12=("ST" "3000" "4000" "LM024")           #1 #6 Barracuda(2.5) 4TB 3TB
-ST13=("ST" "500" "LM030")                   #6 Barracuda(2.5) 500GB
-ST14=("ST" "500" "LM034")                   #6 Barracuda(2.5) 500GB
-ST15=("ST" "1000" "LM048")                  #1 #6 Barracuda(2.5) 1TB
-ST16=("ST" "1000" "LM049")                  #6 Barracuda(2.5) 1TB
-ST17=("ST" "8000" "VX002")                  #2 #4 Skyhawk(3.5) 8TB
-ST18=("ST" "4000" "VX005")                  #2 #4 Skyhawk(3.5) 4TB
-ST19=("ST" "2000" "VX007")                  #2 Skyhawk(3.5) 2TB
-ST20=("ST" "1000" "8000" "VX008")           #1,#2 Skyhawk(3.5) 1TB,8TB 
-ST21=("ST" "6000" "VX010")                  #2 Skyhawk(3.5) 6TB
-ST22=("ST" "6000" "VX011")                  #2 #4 Skyhawk(3.5) 6TB
-ST23=("ST" "2000" "VX012")                  #2 #4 Skyhawk(3.5) 2TB
-ST24=("ST" "4000" "VX013")                  #2 #5 Skyhawk(3.5 UK) 4TB
-ST25=("ST" "2000" "VX015")                  #2 #5 Skyhawk(3.5 UK) 2TB
-ST26=("ST" "3000" "VX016")                  #2 Skyhawk(3.5) 3TB
-ST27=("ST" "3000" "VX017")                  #2 Skyhawk(3.5) 3TB
+ST10=("ST" "500" "DM009")                   #7 Barracuda(3.5) 500GB
+ST11=("ST" "5000" "LM000")                  #1 #6 Barracuda(2.5) 5TB
+ST12=("ST" "2000" "LM015")                  #1 #6 Barracuda(2.5) 2TB
+ST13=("ST" "3000" "4000" "LM024")           #1 #6 Barracuda(2.5) 4TB 3TB
+ST14=("ST" "500" "LM030")                   #6 Barracuda(2.5) 500GB
+ST15=("ST" "500" "LM034")                   #6 Barracuda(2.5) 500GB
+ST16=("ST" "1000" "LM048")                  #1 #6 Barracuda(2.5) 1TB
+ST17=("ST" "1000" "LM049")                  #6 Barracuda(2.5) 1TB
+ST18=("ST" "1000" "LX015")                  #7 FireCuda(2.5) 1TB
+ST19=("ST" "2000" "LX001")                  #7 FireCuda(2.5) 2TB
+ST20=("ST" "8000" "VX002")                  #2 #4 Skyhawk(3.5) 8TB
+ST21=("ST" "4000" "VX005")                  #2 #4 Skyhawk(3.5) 4TB
+ST22=("ST" "2000" "VX007")                  #2 Skyhawk(3.5) 2TB
+ST23=("ST" "1000" "8000" "VX008")           #1,#2 Skyhawk(3.5) 1TB,8TB 
+ST24=("ST" "6000" "VX010")                  #2 Skyhawk(3.5) 6TB
+ST25=("ST" "6000" "VX011")                  #2 #4 Skyhawk(3.5) 6TB
+ST26=("ST" "2000" "VX012")                  #2 #4 Skyhawk(3.5) 2TB
+ST27=("ST" "4000" "VX013")                  #2 #5 Skyhawk(3.5 UK) 4TB
+ST28=("ST" "2000" "VX015")                  #2 #5 Skyhawk(3.5 UK) 2TB
+ST29=("ST" "3000" "VX016")                  #2 Skyhawk(3.5) 3TB
+ST30=("ST" "3000" "VX017")                  #2 Skyhawk(3.5) 3TB
 
 # To test this script when you have no SMR disks, configure and temporarily uncomment one of the the TEST arrays below with a valid CMR disk on your system. 
 # TEST=("WDC WD" "30" "EFRX")
@@ -113,7 +115,7 @@ for k in {01..10}; do
 done
 
 # Detect Seagate SMR disks
-for k in {01..27}; do
+for k in {01..30}; do
   DetectSMR ST"$k" q
 done
 
@@ -142,7 +144,7 @@ else
   done
 
 # Detect Seagate SMR disks
-  for k in {01..27}; do
+  for k in {01..30}; do
     DetectSMR ST"$k"
   done
 
