@@ -2,8 +2,8 @@
 
 # Table column widths
 DeviceWidth=7
-ModelWidth=12
-SerialWidth=17
+ModelWidth=15
+SerialWidth=20
 
 # Gather drive information and populate arrays
 midclt call disk.query | jq -S '.[] | {devname: .devname, model: .model, serial: .serial}' > tmp.json
