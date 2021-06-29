@@ -5,7 +5,7 @@ DeviceWidth=7
 ModelWidth=12
 SerialWidth=17
 
-# Gather disk information and populate arrays
+# Gather drive information and populate arrays
 midclt call disk.query | jq -S '.[] | {devname: .devname, model: .model, serial: .serial}' > tmp.json
 
 declare -a "Device=($(<tmp.json jq -r '.devname | @sh'))"
@@ -23,7 +23,7 @@ name=$1[@]
 SMR=("${!name}")
 unset TMP
 
-# For each disk
+# For each drive
 for ((i=0;i<${#Device[@]};i++)); do
 # Is this manufacturer prefix in the model name?
   if [[ "${Model[$i]:0:6}" == *"${SMR[0]}"* ]]; then
@@ -111,40 +111,40 @@ TO04=("HDWL" "110" "120" "EZSTA")           #1 #7 L200(2.5) 1TB 2TB
 TO05=("HDWL" "110" "120" "UZSVA")           #1 #7 L200(2.5) 1TB 2TB
 TO06=("HDWD" "240" "260" "UZSVA")           #1 #7 P300(3.5) 4TB 6TB
 
-# To test this script when you have no SMR disks, configure and temporarily uncomment one of the the TEST arrays below with a valid CMR disk on your system. 
+# To test this script when you have no SMR drives, configure and temporarily uncomment one of the the TEST arrays below with a valid CMR drives on your system. 
 # TEST=("WDC WD" "30" "EFRX")
 # TEST=("ST" "6000" "VN0041")
 # Now uncomment the TEST lines below (there should bbe two of them), and run the script. Remeber to comment oall TEST lines again when you've finished.
 
-# Quiet detection phase. If an SMR disk is detected flag f will be set.
+# Quiet detection phase. If an SMR drive is detected flag f will be set.
 f=0
 
-# Detect Western Digital SMR disks
+# Detect Western Digital SMR drives
 for k in {01..10}; do
   DetectSMR WD"$k" q
 done
 
-# Detect Seagate SMR disks
+# Detect Seagate SMR drives
 for k in {01..31}; do
   DetectSMR ST"$k" q
 done
 
-# Detect Toshiba SMR disks
+# Detect Toshiba SMR drives
 for k in {01..6}; do
   DetectSMR TO"$k" q
 done
 
 # DetectSMR TEST q
 
-# If the flag f is still unset, no SMR disk was detected. :)
+# If the flag f is still unset, no SMR drive was detected. :)
 if [[ "$f" == 0 ]]; then
   echo
-  echo -e "\e[1;32mNo known SMR disks detected.\e[0m"
+  echo -e "\e[1;32mNo known SMR drives detected.\e[0m"
   echo
 else
-# otherwise, one or more SMR disks were detected so diplay all SMR disks in a table :(
+# otherwise, one or more SMR drives were detected so diplay all SMR drives in a table :(
   echo
-  echo -e "\e[1;31mKnown SMR disk(s) detected.\e[0m"
+  echo -e "\e[1;31mKnown SMR drive(s) detected.\e[0m"
   echo
 
   fmt="%${DeviceWidth}s | %${ModelWidth}s | %${SerialWidth}s |\n"
@@ -153,17 +153,17 @@ else
   s=$(printf "%-$((DeviceWidth+ModelWidth+SerialWidth+8))s" "-")
   echo "${s// /-}"
 
-# Detect Western Digital SMR disks
+# Detect Western Digital SMR drives
   for k in {01..10}; do
     DetectSMR WD"$k"
   done
 
-# Detect Seagate SMR disks
+# Detect Seagate SMR drives
   for k in {01..31}; do
     DetectSMR ST"$k"
   done
 
-# Detect Toshiba SMR disks
+# Detect Toshiba SMR drives
 for k in {01..6}; do
   DetectSMR TO"$k"
 done
