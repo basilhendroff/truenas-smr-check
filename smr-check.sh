@@ -103,6 +103,14 @@ ST29=("ST" "2000" "VX015")                  #2 #5 Skyhawk(3.5 UK) 2TB
 ST30=("ST" "3000" "VX016")                  #2 Skyhawk(3.5) 3TB
 ST31=("ST" "3000" "VX017")                  #2 Skyhawk(3.5) 3TB
 
+# Toshiba
+TO01=("DT02" "400" "600" "ABA")             #1 #7 DT02(3.5) 4TB 6TB
+TO02=("MQ04" "200" "ABD")                   #1 #7 MQ04(2.5) 2TB
+TO03=("MQ04" "100" "ABF")                   #1 #7 MQ04(2.5) 1TB
+TO04=("HDWL" "110" "120" "EZSTA")           #1 #7 L200(2.5) 1TB 2TB
+TO05=("HDWL" "110" "120" "UZSVA")           #1 #7 L200(2.5) 1TB 2TB
+TO06=("HDWD" "240" "260" "UZSVA")           #1 #7 P300(3.5) 4TB 6TB
+
 # To test this script when you have no SMR disks, configure and temporarily uncomment one of the the TEST arrays below with a valid CMR disk on your system. 
 # TEST=("WDC WD" "30" "EFRX")
 # TEST=("ST" "6000" "VN0041")
@@ -119,6 +127,11 @@ done
 # Detect Seagate SMR disks
 for k in {01..31}; do
   DetectSMR ST"$k" q
+done
+
+# Detect Toshiba SMR disks
+for k in {01..6}; do
+  DetectSMR TO"$k" q
 done
 
 # DetectSMR TEST q
@@ -149,6 +162,11 @@ else
   for k in {01..31}; do
     DetectSMR ST"$k"
   done
+
+# Detect Toshiba SMR disks
+for k in {01..6}; do
+  DetectSMR TO"$k"
+done
 
 # DetectSMR TEST  
   echo
