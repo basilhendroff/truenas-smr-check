@@ -23,7 +23,7 @@ The script SMR database is updated whenever previously unidentified SMR drives s
 ## Scope
 Western Digital, Seagate and Toshiba SMR drives are detected.
 
-The database of known SMR drives has been compiled from the following sources:
+The database of known SMR drives has been compiled from the following primary sources:
 1. [TrueNAS Community Resource: List of known SMR drives](https://www.truenas.com/community/resources/list-of-known-smr-drives.141/)
 2. [NAS Compares: List Of WD CMR And SMR Hard Drives (HDD)](https://nascompares.com/answer/list-of-wd-cmr-and-smr-hard-drives-hdd/)
 3. [HDDScan: What WD and HGST hard drives are SMR?](https://hddscan.com/blog/2020/hdd-wd-smr.html)
