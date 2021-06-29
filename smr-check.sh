@@ -63,14 +63,23 @@ done
 # Western Digital
 WD01=("WDC WD" "40" "60" "EDAZ")            #3 WD Elements(3.5) 4TB 6TB
 WD02=("WDC WD" "20" "30" "40" "60" "EFAX")  #1 WD Red(3.5) 2TB 3TB 4TB 6TB  
-WD03=("WDC WD" "60" "EMAZ")                 #3 WD Elements(3.5) 6TB
-WD04=("WDC WD" "20" "30" "40" "60" "EZAZ")  #1 WD Blue(3.5) 2TB 3TB 4TB 6TB  
+WD03=("WDC WD" "40" "60" "EMAZ")            #3 #7 WD Elements/MyBook/Easystore(3.5) 6TB
+WD04=("WDC WD" "20" "30" "40" "60" "EZAZ")  #1 #7 WD Blue/Elements(3.5) 2TB 3TB 4TB 6TB  
 WD05=("WDC WD" "5000" "LPSX")               #2 WD Black(2.5) 500GB
 WD06=("WDC WD" "9000" "LPZX")               #1 WD Blue(2.5) 900GB
-WD07=("WDC WD" "40" "NPZZ")                 #3 WD Blue(2.5) 4TB
-WD08=("WDC WD" "10" "SPSX")                 #1 WD Black(2.5) 1TB
-WD09=("WDC WD" "10" "SPWX")                 #1 WD Blue(2.5) 1TB
-WD10=("WDC WD" "10" "20" "SPZX")            #1 WD Blue(2.5) 1TB 2TB
+WD07=("WDC WD" "40" "50" "NDZM")            #7 WD ArmorATD/MyPassport/G-DRIVE(2.5) 4TB 5TB
+WD08=("WDC WD" "40" "50" "NDZW")            #7 WD MyPassport(2.5) 4TB 5TB
+WD09=("WDC WD" "30" "NMRW")                 #7 WD Easystore(2.5) 3TB
+WD10=("WDC WD" "40" "NMZM")                 #7 WD ArmorATD/MyPassport/G-DRIVE(2.5) 4TB 
+WD11=("WDC WD" "30" "40" "50" "NMZW")       #7 WD P10/Elements/Easystore/PS4(2.5) 4TB
+WD12=("WDC WD" "40" "NPZZ")                 #3 WD Blue(2.5) 4TB
+WD13=("WDC WD" "10" "20" "SDZM")            #7 WD MyPassport(2.5) 1TB 2TB
+WD14=("WDC WD" "10" "20" "SMZM")            #7 WD ArmorATD/G-DRIVE(2.5) 1TB 2TB
+WD15=("WDC WD" "10" "20" "SDZW")            #7 WD MyPassport(2.5) 1TB 2TB
+WD16=("WDC WD" "10" "20" "SMZW")            #7 WD P10/Easystore/Elements(2.5) 2TB
+WD17=("WDC WD" "10" "SPSX")                 #1 WD Black(2.5) 1TB
+WD18=("WDC WD" "10" "SPWX")                 #1 WD Blue(2.5) 1TB
+WD19=("WDC WD" "10" "20" "SPZX")            #1 WD Blue(2.5) 1TB 2TB
 
 # Hitachi Global Storage Technologies (now Western Digital) 
 HGST01=("HSH72" "1414" "1415" "AL42M0")     #7 #8 Ultrastar HC620(3.5) 14TB 15TB
@@ -138,7 +147,7 @@ TO06=("HDWD" "240" "260" "UZSVA")           #1 #7 P300(3.5) 4TB 6TB
 f=0
 
 # Detect Western Digital SMR drives
-for k in {01..10}; do
+for k in {01..19}; do
   DetectSMR WD"$k" q
 done
 
@@ -177,7 +186,7 @@ else
   echo "${s// /-}"
 
 # Detect Western Digital SMR drives
-  for k in {01..10}; do
+  for k in {01..19}; do
     DetectSMR WD"$k"
   done
 
