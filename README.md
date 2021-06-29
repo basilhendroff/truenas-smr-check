@@ -1,7 +1,7 @@
 # truenas-smr-check
 TrueCommand has a built-in check for known WD SMR disks on connected TrueNAS servers. However, if you don't use TrueCommand, you can still use this bash script to help you identify culprit disks. The script doesn't limit checks just to the WD NAS range of disks (RED), but extends this to any WD SMR disk listed in its database (BLUE, BLACK, etc.). 
 
-The latest version identifies known Seagate and Toshiba SMR drives as well.
+The latest version identifies known Seagate and Toshiba SMR disks as well.
 
 ## Status
 This script will work with FreeNAS 11.3, and TrueNAS CORE 12.0 or later. Though untested, it may very well work with earlier version of FreeNAS 11.
