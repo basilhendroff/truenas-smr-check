@@ -25,15 +25,15 @@ unset TMP
 
 # For each disk
 for ((i=0;i<${#Device[@]};i++)); do
-# Is the manufacturer in the database?
+# Is this manufacturer prefix in the model name?
   if [[ "${Model[$i]:0:6}" == *"${SMR[0]}"* ]]; then
 # If so, add the trimmed model name to a temporary array  
     TMP[$i]="${Model[$i]#*" "}"
     TMP[$i]="${TMP[$i]%%-*}"
-# Based on the model suffix...
+# Is this string in the trimmed model name (usually a suffix)?
     if [[ "${TMP[$i]}" == *"${SMR[-1]}"* ]]; then
       for ((j=1;j<$((${#SMR[@]}-1));j++)); do
-# Is the model in the SMR database?
+# Is this number in the trimmed model name?
         if [[ "${TMP[$i]}" == *"${SMR[j]}"* ]]; then
           if [[ -z "$2" ]]; then  
             printf "$fmt" "${Device[$i]}" "${TMP[$i]}" "${Serial[$i]}"
