@@ -56,7 +56,8 @@ done
 # 4. https://www.seagate.com/files/www-content/datasheets/pdfs/skyhawk-3-5-hdd-DS1902-15M-2103US-en_US.pdf
 # 5. https://www.seagate.com/www-content/datasheets/pdfs/skyhawk-3-5-hdd-DS1902-15-2009GB-en_AS.pdf
 # 6. https://www.seagate.com/www-content/datasheets/pdfs/barracuda-2-5-DS1907-3-2005GB-en_AU.pdf
-#
+# 7. https://gutendata.de/portfolio-item/how-to-shoose-hard-drive-introduction-in-magnetic-recording-technology-that-maybe-you-heard-on-pmr-cmr-and-epmr-smr-hamr-and-mamr-tdmr-and-bpmr/
+
 # Western Digital
 WD01=("WDC WD" "40" "60" "EDAZ")            #3 WD Elements(3.5) 4TB 6TB
 WD02=("WDC WD" "20" "30" "40" "60" "EFAX")  #1 WD Red(3.5) 2TB 3TB 4TB 6TB  
@@ -87,19 +88,20 @@ ST14=("ST" "500" "LM030")                   #6 Barracuda(2.5) 500GB
 ST15=("ST" "500" "LM034")                   #6 Barracuda(2.5) 500GB
 ST16=("ST" "1000" "LM048")                  #1 #6 Barracuda(2.5) 1TB
 ST17=("ST" "1000" "LM049")                  #6 Barracuda(2.5) 1TB
-ST18=("ST" "1000" "LX015")                  #7 FireCuda(2.5) 1TB
-ST19=("ST" "2000" "LX001")                  #7 FireCuda(2.5) 2TB
-ST20=("ST" "8000" "VX002")                  #2 #4 Skyhawk(3.5) 8TB
-ST21=("ST" "4000" "VX005")                  #2 #4 Skyhawk(3.5) 4TB
-ST22=("ST" "2000" "VX007")                  #2 Skyhawk(3.5) 2TB
-ST23=("ST" "1000" "8000" "VX008")           #1,#2 Skyhawk(3.5) 1TB,8TB 
-ST24=("ST" "6000" "VX010")                  #2 Skyhawk(3.5) 6TB
-ST25=("ST" "6000" "VX011")                  #2 #4 Skyhawk(3.5) 6TB
-ST26=("ST" "2000" "VX012")                  #2 #4 Skyhawk(3.5) 2TB
-ST27=("ST" "4000" "VX013")                  #2 #5 Skyhawk(3.5 UK) 4TB
-ST28=("ST" "2000" "VX015")                  #2 #5 Skyhawk(3.5 UK) 2TB
-ST29=("ST" "3000" "VX016")                  #2 Skyhawk(3.5) 3TB
-ST30=("ST" "3000" "VX017")                  #2 Skyhawk(3.5) 3TB
+ST18=("ST" "2000" "LX001")                  #7 FireCuda(2.5) 2TB
+ST19=("ST" "1000" "LX015")                  #7 FireCuda(2.5) 1TB
+ST20=("ST" "500" "LX025")                   #7 FireCuda(2.5) 500GB
+ST21=("ST" "8000" "VX002")                  #2 #4 Skyhawk(3.5) 8TB
+ST22=("ST" "4000" "VX005")                  #2 #4 Skyhawk(3.5) 4TB
+ST23=("ST" "2000" "VX007")                  #2 Skyhawk(3.5) 2TB
+ST24=("ST" "1000" "8000" "VX008")           #1,#2 Skyhawk(3.5) 1TB,8TB 
+ST25=("ST" "6000" "VX010")                  #2 Skyhawk(3.5) 6TB
+ST26=("ST" "6000" "VX011")                  #2 #4 Skyhawk(3.5) 6TB
+ST27=("ST" "2000" "VX012")                  #2 #4 Skyhawk(3.5) 2TB
+ST28=("ST" "4000" "VX013")                  #2 #5 Skyhawk(3.5 UK) 4TB
+ST29=("ST" "2000" "VX015")                  #2 #5 Skyhawk(3.5 UK) 2TB
+ST30=("ST" "3000" "VX016")                  #2 Skyhawk(3.5) 3TB
+ST31=("ST" "3000" "VX017")                  #2 Skyhawk(3.5) 3TB
 
 # To test this script when you have no SMR disks, configure and temporarily uncomment one of the the TEST arrays below with a valid CMR disk on your system. 
 # TEST=("WDC WD" "30" "EFRX")
@@ -115,7 +117,7 @@ for k in {01..10}; do
 done
 
 # Detect Seagate SMR disks
-for k in {01..30}; do
+for k in {01..31}; do
   DetectSMR ST"$k" q
 done
 
@@ -144,7 +146,7 @@ else
   done
 
 # Detect Seagate SMR disks
-  for k in {01..30}; do
+  for k in {01..31}; do
     DetectSMR ST"$k"
   done
 
