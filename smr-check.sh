@@ -57,6 +57,8 @@ done
 # 5. https://www.seagate.com/www-content/datasheets/pdfs/skyhawk-3-5-hdd-DS1902-15-2009GB-en_AS.pdf
 # 6. https://www.seagate.com/www-content/datasheets/pdfs/barracuda-2-5-DS1907-3-2005GB-en_AU.pdf
 # 7. https://gutendata.de/portfolio-item/how-to-shoose-hard-drive-introduction-in-magnetic-recording-technology-that-maybe-you-heard-on-pmr-cmr-and-epmr-smr-hamr-and-mamr-tdmr-and-bpmr/
+# 8. https://documents.westerndigital.com/content/dam/doc-library/en_us/assets/public/western-digital/product/data-center-drives/ultrastar-dc-hc600-series/data-sheet-ultrastar-dc-hc620.pdf 
+# 9. https://documents.westerndigital.com/content/dam/doc-library/en_us/assets/public/western-digital/product/data-center-drives/ultrastar-dc-hc600-series/data-sheet-ultrastar-dc-hc650.pdf 
 
 # Western Digital
 WD01=("WDC WD" "40" "60" "EDAZ")            #3 WD Elements(3.5) 4TB 6TB
@@ -69,6 +71,22 @@ WD07=("WDC WD" "40" "NPZZ")                 #3 WD Blue(2.5) 4TB
 WD08=("WDC WD" "10" "SPSX")                 #1 WD Black(2.5) 1TB
 WD09=("WDC WD" "10" "SPWX")                 #1 WD Blue(2.5) 1TB
 WD10=("WDC WD" "10" "20" "SPZX")            #1 WD Blue(2.5) 1TB 2TB
+
+# Hitachi Global Storage Technologies (now Western Digital) 
+HGST01=("HSH72" "1414" "1415" "AL42M0")       #7 #8 Ultrastar HC620(3.5) 14TB 15TB
+HGST02=("HSH72" "1414" "1415" "AL42M4")       #7 #8 Ultrastar HC620(3.5) 14TB 15TB
+HGST03=("HSH72" "1414" "1415" "AL52M0")       #7 #8 Ultrastar HC620(3.5) 14TB 15TB
+HGST04=("HSH72" "1414" "1415" "AL52M4")       #7 #8 Ultrastar HC620(3.5) 14TB 15TB
+HGST05=("HSH72" "1414" "1415" "ALE6M0")       #7 #8 Ultrastar HC620(3.5) 14TB 15TB
+HGST06=("HSH72" "1414" "1415" "ALE6M4")       #7 #8 Ultrastar HC620(3.5) 14TB 15TB
+HGST07=("HSH72" "1414" "1415" "ALN6M0")       #7 #8 Ultrastar HC620(3.5) 14TB 15TB
+HGST08=("HSH72" "1414" "1415" "ALN6M4")       #7 #8 Ultrastar HC620(3.5) 14TB 15TB
+HGST09=("WSH72" "2020" "ALN6L1")              #7 #9 Ultrastar HC650(3.5) 20TB
+HGST10=("WSH72" "2020" "ALN6L4")              #7 #9 Ultrastar HC650(3.5) 20TB
+HGST11=("WSH72" "2020" "ALN6L5")              #7 #9 Ultrastar HC650(3.5) 20TB
+HGST12=("WSH72" "2020" "AL4201")              #7 #9 Ultrastar HC650(3.5) 20TB
+HGST13=("WSH72" "2020" "AL4204")              #7 #9 Ultrastar HC650(3.5) 20TB
+HGST14=("WSH72" "2020" "AL4205")              #7 #9 Ultrastar HC650(3.5) 20TB
 
 # Seagate
 ST01=("ST" "6000" "8000" "AS0002")          #1 Archive(3.5) 6TB 8TB 
@@ -124,6 +142,11 @@ for k in {01..10}; do
   DetectSMR WD"$k" q
 done
 
+# Detect HGST SMR drives
+for k in {01..14}; do
+  DetectSMR HGST"$k" q
+done
+
 # Detect Seagate SMR drives
 for k in {01..31}; do
   DetectSMR ST"$k" q
@@ -157,6 +180,11 @@ else
   for k in {01..10}; do
     DetectSMR WD"$k"
   done
+
+# Detect HGST SMR drives
+for k in {01..14}; do
+  DetectSMR HGST"$k"
+done
 
 # Detect Seagate SMR drives
   for k in {01..31}; do
