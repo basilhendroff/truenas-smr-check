@@ -1,5 +1,5 @@
 # truenas-smr-check
-TrueCommand has a built-in check for known WD SMR drives on connected TrueNAS servers. However, if you don't use TrueCommand, you can still use this bash script to help you identify culprit drives. The script doesn't limit checks just to the WD NAS range of drives (RED), but extends this to any WD SMR drive listed in its database (BLUE, BLACK, Ultrastar, etc.). 
+TrueCommand has a built-in check for known WD SMR drives on connected TrueNAS servers. However, if you don't use TrueCommand, you can still use this bash script to help you identify SMR drives. The script doesn't limit checks just to the WD NAS range of drives (RED), but extends this to any WD SMR drive listed in its database (BLUE, BLACK, Ultrastar, etc.). 
 
 The latest version identifies known Seagate and Toshiba SMR drives as well.
 
