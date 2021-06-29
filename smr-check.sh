@@ -71,7 +71,7 @@ WD07=("WDC WD" "40" "50" "NDZM")            #7 WD ArmorATD/MyPassport/G-DRIVE(2.
 WD08=("WDC WD" "40" "50" "NDZW")            #7 WD MyPassport(2.5) 4TB 5TB
 WD09=("WDC WD" "30" "NMRW")                 #7 WD Easystore(2.5) 3TB
 WD10=("WDC WD" "40" "NMZM")                 #7 WD ArmorATD/MyPassport/G-DRIVE(2.5) 4TB 
-WD11=("WDC WD" "30" "40" "50" "NMZW")       #7 WD P10/Elements/Easystore/PS4(2.5) 4TB
+WD11=("WDC WD" "30" "40" "50" "NMZW")       #7 WD P10/Elements/Easystore/PS4/Xbox(2.5) 4TB
 WD12=("WDC WD" "40" "NPZZ")                 #3 WD Blue(2.5) 4TB
 WD13=("WDC WD" "10" "20" "SDZM")            #7 WD MyPassport(2.5) 1TB 2TB
 WD14=("WDC WD" "10" "20" "SMZM")            #7 WD ArmorATD/G-DRIVE(2.5) 1TB 2TB
@@ -101,34 +101,38 @@ HGST14=("WSH72" "2020" "AL4205")            #7 #9 Ultrastar HC650(3.5) 20TB
 ST01=("ST" "6000" "8000" "AS0002")          #1 Archive(3.5) 6TB 8TB 
 ST02=("ST" "8000" "AS0003")                 #1 Exos (3.5) 8TB 
 ST03=("ST" "5000" "AS0011")                 #1 Archive(3.5) 5TB
-ST04=("ST" "5000" "DM000")                  #1 Desktop(3.5) 5TB
-ST05=("ST" "5000" "6000" "DM003")           #1 Barracuda(3.5) 5TB 6TB
-ST06=("ST" "4000" "8000" "DM004")           #1 Barracuda(3.5) 8TB 4TB
+ST04=("ST" "4000" "5000" "DM000")           #1 #7 Desktop/Expansion(3.5) 4TB 5TB
+ST05=("ST" "5000" "6000" "DM003")           #1 #7 Barracuda/Expansion/BackupoPlus(3.5) 5TB 6TB
+ST06=("ST" "4000" "8000" "DM004")           #1 #7 Barracuda/Expansion/LaCie(3.5) 4TB 8TB
 ST07=("ST" "2000" "DM005")                  #1 Barracuda(3.5) 4TB 2TB
 ST08=("ST" "3000" "DM007")                  #1 Barracuda(3.5) 3TB
 ST09=("ST" "2000" "DM008")                  #1 Barracuda(3.5) 2TB
 ST10=("ST" "500" "DM009")                   #7 Barracuda(3.5) 500GB
-ST11=("ST" "5000" "LM000")                  #1 #6 Barracuda(2.5) 5TB
-ST12=("ST" "2000" "LM015")                  #1 #6 Barracuda(2.5) 2TB
-ST13=("ST" "3000" "4000" "LM024")           #1 #6 Barracuda(2.5) 4TB 3TB
-ST14=("ST" "500" "LM030")                   #6 Barracuda(2.5) 500GB
-ST15=("ST" "500" "LM034")                   #6 Barracuda(2.5) 500GB
-ST16=("ST" "1000" "LM048")                  #1 #6 Barracuda(2.5) 1TB
-ST17=("ST" "1000" "LM049")                  #6 Barracuda(2.5) 1TB
-ST18=("ST" "2000" "LX001")                  #7 FireCuda(2.5) 2TB
-ST19=("ST" "1000" "LX015")                  #7 FireCuda(2.5) 1TB
-ST20=("ST" "500" "LX025")                   #7 FireCuda(2.5) 500GB
-ST21=("ST" "8000" "VX002")                  #2 #4 Skyhawk(3.5) 8TB
-ST22=("ST" "4000" "VX005")                  #2 #4 Skyhawk(3.5) 4TB
-ST23=("ST" "2000" "VX007")                  #2 Skyhawk(3.5) 2TB
-ST24=("ST" "1000" "8000" "VX008")           #1,#2 Skyhawk(3.5) 1TB,8TB 
-ST25=("ST" "6000" "VX010")                  #2 Skyhawk(3.5) 6TB
-ST26=("ST" "6000" "VX011")                  #2 #4 Skyhawk(3.5) 6TB
-ST27=("ST" "2000" "VX012")                  #2 #4 Skyhawk(3.5) 2TB
-ST28=("ST" "4000" "VX013")                  #2 #5 Skyhawk(3.5 UK) 4TB
-ST29=("ST" "2000" "VX015")                  #2 #5 Skyhawk(3.5 UK) 2TB
-ST30=("ST" "3000" "VX016")                  #2 Skyhawk(3.5) 3TB
-ST31=("ST" "3000" "VX017")                  #2 Skyhawk(3.5) 3TB
+ST11=("ST" "5000" "LM000")                  #1 #6 #7 Barracuda/BackupPlus/Expansion/LaCie/Portable/Xbox(2.5) 5TB
+ST12=("ST" "2000" "LM007")                  #7 BackupPlus/Expansion/LaCie/Portable/PS/Xbox/DJI(2.5) 2TB
+ST13=("ST" "2000" "LM010")                  #7 LaCie/BackupPlus(2.5) 2TB
+ST14=("ST" "2000" "LM015")                  #1 #6 Barracuda/Xbox(2.5) 2TB
+ST15=("ST" "3000" "4000" "LM024")           #1 #6 #7 Barracuda/BackupPlus/ExpaPS4/nsion/LaCie/Portable/PS4/Xbox(2.5) 3TB 4TB
+ST16=("ST" "500" "LM030")                   #6 Barracuda(2.5) 500GB
+ST17=("ST" "500" "LM034")                   #6 Barracuda(2.5) 500GB
+ST18=("ST" "1000" "LM035")                  #7 BackupPlus/Expansion/LaCie/Portable/Chromebook/Duet/Joy(2.5) 1TB
+ST19=("ST" "1000" "LM038")                  #7 LaCie/BackupPlus(2.5) 1TB
+ST20=("ST" "1000" "LM048")                  #1 #6 Barracuda(2.5) 1TB
+ST21=("ST" "1000" "LM049")                  #6 Barracuda(2.5) 1TB
+ST22=("ST" "2000" "LX001")                  #7 FireCuda(2.5) 2TB
+ST23=("ST" "1000" "LX015")                  #7 FireCuda(2.5) 1TB
+ST24=("ST" "500" "LX025")                   #7 FireCuda(2.5) 500GB
+ST25=("ST" "8000" "VX002")                  #2 #4 Skyhawk(3.5) 8TB
+ST26=("ST" "4000" "VX005")                  #2 #4 Skyhawk(3.5) 4TB
+ST27=("ST" "2000" "VX007")                  #2 Skyhawk(3.5) 2TB
+ST28=("ST" "1000" "8000" "VX008")           #1,#2 Skyhawk(3.5) 1TB 8TB 
+ST29=("ST" "6000" "VX010")                  #2 Skyhawk(3.5) 6TB
+ST30=("ST" "6000" "VX011")                  #2 #4 Skyhawk(3.5) 6TB
+ST31=("ST" "2000" "VX012")                  #2 #4 Skyhawk(3.5) 2TB
+ST32=("ST" "4000" "VX013")                  #2 #5 Skyhawk(3.5 UK) 4TB
+ST33=("ST" "2000" "VX015")                  #2 #5 Skyhawk(3.5 UK) 2TB
+ST34=("ST" "3000" "VX016")                  #2 Skyhawk(3.5) 3TB
+ST35=("ST" "3000" "VX017")                  #2 Skyhawk(3.5) 3TB
 
 # Toshiba
 TO01=("DT02" "400" "600" "ABA")             #1 #7 DT02(3.5) 4TB 6TB
@@ -157,7 +161,7 @@ for k in {01..14}; do
 done
 
 # Detect Seagate SMR drives
-for k in {01..31}; do
+for k in {01..35}; do
   DetectSMR ST"$k" q
 done
 
@@ -196,7 +200,7 @@ for k in {01..14}; do
 done
 
 # Detect Seagate SMR drives
-  for k in {01..31}; do
+  for k in {01..35}; do
     DetectSMR ST"$k"
   done
 
