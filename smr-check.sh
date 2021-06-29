@@ -132,7 +132,7 @@ TO06=("HDWD" "240" "260" "UZSVA")           #1 #7 P300(3.5) 4TB 6TB
 # To test this script when you have no SMR drives, configure and temporarily uncomment one of the the TEST arrays below with a valid CMR drives on your system. 
 # TEST=("WDC WD" "30" "EFRX")
 # TEST=("ST" "6000" "VN0041")
-# Now uncomment the TEST lines below (there should bbe two of them), and run the script. Remeber to comment oall TEST lines again when you've finished.
+# Now uncomment the TEST lines below (there should be two of them), and run the script. Remeber to comment oall TEST lines again when you've finished.
 
 # Quiet detection phase. If an SMR drive is detected flag f will be set.
 f=0
