@@ -79,6 +79,7 @@ ST06=("ST" "4000" "8000" "DM004")           #1 Barracuda(3.5) 8TB 4TB
 ST07=("ST" "2000" "DM005")                  #1 Barracuda(3.5) 4TB 2TB
 ST08=("ST" "3000" "DM007")                  #1 Barracuda(3.5) 3TB
 ST09=("ST" "2000" "DM008")                  #1 Barracuda(3.5) 2TB
+ST09=("ST" "500" "DM009")                   #7 Barracuda(3.5) 500GB
 ST10=("ST" "5000" "LM000")                  #1 #6 Barracuda(2.5) 5TB
 ST11=("ST" "2000" "LM015")                  #1 #6 Barracuda(2.5) 2TB
 ST12=("ST" "3000" "4000" "LM024")           #1 #6 Barracuda(2.5) 4TB 3TB
