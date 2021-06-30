@@ -25,8 +25,9 @@ Western Digital, Seagate and Toshiba SMR drives are detected.
 
 The database of known SMR drives has been compiled from the following primary sources:
 1. [TrueNAS Community Resource: List of known SMR drives](https://www.truenas.com/community/resources/list-of-known-smr-drives.141/)
-2. [NAS Compares: List Of WD CMR And SMR Hard Drives (HDD)](https://nascompares.com/answer/list-of-wd-cmr-and-smr-hard-drives-hdd/)
-3. [HDDScan: What WD and HGST hard drives are SMR?](https://hddscan.com/blog/2020/hdd-wd-smr.html)
+2. [GutenData24: How to сhoose hard drive?! Introduction in magnetic recording technology](https://gutendata.de/portfolio-item/how-to-shoose-hard-drive-introduction-in-magnetic-recording-technology-that-maybe-you-heard-on-pmr-cmr-and-epmr-smr-hamr-and-mamr-tdmr-and-bpmr/)
+3. [NAS Compares: List Of WD CMR And SMR Hard Drives (HDD)](https://nascompares.com/answer/list-of-wd-cmr-and-smr-hard-drives-hdd/)
+4. [HDDScan: What WD and HGST hard drives are SMR?](https://hddscan.com/blog/2020/hdd-wd-smr.html)
 
 ## Disclaimer
 This script is useful for quickly identifying SMR drives registered in the SMR database within the script. While every endeavour has been made to include as many SMR drives as possible, be aware the SMR database may not be complete. Therefore, you're advised not to rely solely on this script, but to confirm using other methods that SMR drives are not being used in your TrueNAS server.
