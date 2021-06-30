@@ -179,7 +179,7 @@ done
 # If the flag f is still unset, no SMR drive was detected. :)
 if [[ "$f" == 0 ]]; then
   echo
-  echo -e "\e[1;32mNo known SMR drives detected.\e[0m"
+  echo -e "\e[1;32mNo known SMR drives detected. That's a good sign, but there's no guarantee. Double-check using other means.\e[0m"
   echo
 else
 # otherwise, one or more SMR drives were detected so diplay all SMR drives in a table :(
@@ -190,8 +190,8 @@ else
   fmt="%${DeviceWidth}s | %${ModelWidth}s | %${SerialWidth}s |\n"
   
   printf "$fmt" "Device" "Model" "Serial Number" 
-  s=$(printf "%-$((DeviceWidth+ModelWidth+SerialWidth+8))s" "-")
-  echo "${s// /-}"
+  separator=$(printf "%-$((DeviceWidth+ModelWidth+SerialWidth+8))s" "-")
+  echo "${separator// /-}"
 
 # Detect Western Digital SMR drives
   for k in {01..19}; do
