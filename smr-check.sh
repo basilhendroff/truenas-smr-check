@@ -179,7 +179,7 @@ done
 # If the flag f is still unset, no SMR drive was detected. :)
 if [[ "$f" == 0 ]]; then
   echo
-  echo -e "\e[1;32mNo known SMR drives detected. That's a good sign, but there's no guarantee. Double-check using other means.\e[0m"
+  echo -e "\e[1;32mNo known SMR drives detected. That's a good sign, but it isn't a guarantee. Double-check using other means.\e[0m"
   echo
 else
 # otherwise, one or more SMR drives were detected so diplay all SMR drives in a table :(
